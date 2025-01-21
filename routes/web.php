@@ -24,6 +24,7 @@ Route::resource('empleados', EmpleadoController::class);
 Route::get('empleados/{id}', [EmpleadoController::class, 'show'])->name('empleados.show');
 Route::get('admin/attendance/employees-available/{date}', [AttendanceController::class, 'getAvailableEmployees']);
 Route::post('/attendance/auto-register-absences', [AttendanceController::class, 'autoRegisterAbsences'])->name('attendance.autoRegisterAbsences');
+Route::get('/orquest/businesses/{businessId}/services', [OrquestController::class, 'getServices']);
 
 
 

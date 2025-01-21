@@ -30,5 +30,10 @@ return [
         'secret' => env('AWS_SECRET_ACCESS_KEY'),
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
+	
+	'orquest' => [
+    'base_url' => env('ORQUEST_BASE_URL', 'https://importer.orquest.es/api/v2'),
+],
+
 
 ];
