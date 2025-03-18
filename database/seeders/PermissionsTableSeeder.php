@@ -36,7 +36,7 @@ class PermissionsTableSeeder extends Seeder
             'profile_password_edit',
         ];
 
-        Permission::truncate();
+        Permission::query()->delete();
         foreach ($permissions as $permission) {
             Permission::create(['title' => $permission]);
         }
